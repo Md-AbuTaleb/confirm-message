@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="/img/author.jpg">
+		<title>Confirm</title>
+		<!-- Font awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+	</head>
+<body>
+<form onsubmit="return eraseConfirm()" name="form" action=""  method="POST">
+	<div style="display: flex;justify-content: center;align-items: center;height: 500px;width: auto;">
+		<button type="submit" name="owner_delete">Delete</button>
+	</div>
+</form>
+<script>
+//confirm message to erase site info;
+function eraseConfirm(){
+	let result = confirm('Are you sure to delete ?');
+	if(result){
+		return true;
+	}else{
+		return false;
+	}	
+}
+</script>
+</body>
+</html>
